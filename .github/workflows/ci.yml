@@ -1,0 +1,16 @@
+name: Testing GitHub Workflows
+
+on:
+  push:
+
+jobs:
+  init:
+    name: Initialize Job
+    runs-on: self-hosted
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello Moussa"
+
+      - name: Show Hostname
+        run: echo "$HOSTNAME"
